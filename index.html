@@ -1,0 +1,108 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Alisher Bekmurza — junior backend / full-stack developer in Astana. Live projects: payments, real-time chat, job queues, e-commerce."><title>Alisher Bekmurza</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#F4F5F1;--surface:#FFFFFF;--ink:#14191A;--muted:#58625F;--line:#DCE1DB;--accent:#1D6B58;--accent-ink:#FFFFFF;--code-bg:#E9EEE8;--ok:#1D6B58}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0E1312;--surface:#151B1A;--ink:#E6ECE9;--muted:#96A39E;--line:#26302D;--accent:#5CC3A4;--accent-ink:#0B1110;--code-bg:#1B2422;--ok:#5CC3A4}}
+:root[data-theme="dark"]{--bg:#0E1312;--surface:#151B1A;--ink:#E6ECE9;--muted:#96A39E;--line:#26302D;--accent:#5CC3A4;--accent-ink:#0B1110;--code-bg:#1B2422;--ok:#5CC3A4}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 "IBM Plex Sans",system-ui,sans-serif;padding-inline:20px}
+.wrap{max-width:980px;margin:0 auto;padding-block:56px 72px}
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.intro{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center}
+.intro img{width:112px;height:112px;border-radius:50%;object-fit:cover;border:1px solid var(--line)}
+h1{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:700;font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.02;letter-spacing:-.02em;margin:0;text-wrap:balance}
+.role{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.9rem;color:var(--muted);margin:.5rem 0 0}
+.lede{max-width:64ch;margin:28px 0 0;font-size:1.08rem}
+.contact{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.btn{display:inline-flex;align-items:center;padding:.5rem .9rem;border-radius:8px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:500;font-size:.92rem;border:1px solid var(--accent)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn:hover{filter:brightness(1.08)}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:22px;font-size:.9rem;color:var(--muted)}
+.facts b{color:var(--ink);font-weight:600}
+h2{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:500;font-size:1.5rem;margin:64px 0 8px;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:0 0 20px;max-width:64ch}
+.proj{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:28px;padding:26px 0;border-top:1px solid var(--line)}
+.proj h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-size:1.45rem;margin:0;font-weight:700;letter-spacing:-.01em}
+.tag{margin:.2rem 0 .8rem;color:var(--muted)}
+.req{display:inline-block;font:500 .78rem/1.4 "IBM Plex Mono",ui-monospace,monospace;background:var(--code-bg);padding:.3rem .55rem;border-radius:6px;overflow-wrap:anywhere}
+.req .m{color:var(--accent);font-weight:600} .req .ok{color:var(--ok);margin-left:.3rem}
+.pb p{margin:0 0 .7rem;max-width:62ch}
+.stack{font:.82rem/1.5 "IBM Plex Mono",ui-monospace,monospace;color:var(--muted)}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
+.grid2 h3{font-size:1.05rem;margin:0 0 .3rem}
+.grid2 p{margin:0;color:var(--muted)}
+.skills{display:grid;grid-template-columns:140px 1fr;gap:6px 18px;font-size:.95rem}
+.skills dt{color:var(--muted);font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.82rem;padding-top:.15rem}
+.skills dd{margin:0}
+footer{margin-top:64px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+@media (max-width:640px){.intro{grid-template-columns:1fr}.proj{grid-template-columns:1fr;gap:12px}.skills{grid-template-columns:1fr}.skills dt{padding-top:.6rem}}
+</style>
+<style>body{margin:0}
+.mono{width:112px;height:112px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--accent);color:var(--accent-ink);font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:700;font-size:2.4rem;letter-spacing:.02em}
+</style></head><body><div class="wrap">
+<section class="intro">
+  <div class="mono">AB</div>
+  <div><h1>Alisher Bekmurza</h1><p class="role">junior backend / full-stack developer · Astana, Kazakhstan</p></div>
+</section>
+<p class="lede">Computer Science student at Nazarbayev University. I build backends that are deployed and tested: payments with Stripe webhooks, real-time chat across server instances, background-job platforms and e-commerce APIs — Python/FastAPI and Node/TypeScript on PostgreSQL and Redis. I work with AI-assisted tooling every day.</p>
+<div class="facts"><span><b>Available</b> 20–25 h/week now, full-time in summer</span><span><b>Languages</b> Kazakh, Russian (native) · English (C1)</span><span><b>Open to</b> junior roles, internships, freelance</span></div>
+<div class="contact">
+  <a class="btn" href="https://t.me/billeryolo" target="_blank" rel="noopener">Telegram @billeryolo</a>
+  <a class="btn ghost" href="mailto:alisherbekmurza@gmail.com">alisherbekmurza@gmail.com</a>
+  <a class="btn ghost" href="https://wa.me/77025004531" target="_blank" rel="noopener">WhatsApp +7 702 500 4531</a>
+  <a class="btn ghost" href="https://github.com/billeryolo" target="_blank" rel="noopener">GitHub</a>
+  <a class="btn ghost" href="https://www.linkedin.com/in/alisher-bekmurza-42a805360" target="_blank" rel="noopener">LinkedIn</a>
+</div>
+
+<h2>Projects</h2>
+<p class="sub">Every project below is live — the line under each name is a real endpoint you can open.</p>
+<article class="proj">
+  <div class="ph"><h3>Paygate</h3><p class="tag">Payments, credits and an AI assistant that fails gracefully</p>
+  <code class="req"><span class="m">GET</span> /health <span class="ok">200</span></code></div>
+  <div class="pb"><p>Users buy credit packs through Stripe Checkout; a signature-verified webhook credits a ledger; credits are spent on an OpenAI-backed assistant. Idempotency keys, event-id dedupe and row locks mean a double-delivered webhook can never credit twice. Circuit breakers, retries with backoff and rate limits wrap every outbound call.</p><p class="stack">TypeScript · Fastify · PostgreSQL · Stripe · OpenAI · Telegram Bot API · Redis · Docker</p><div class="links"><a class="btn" href="https://paygate-production-ee1e.up.railway.app/health" target="_blank" rel="noopener">Open live</a><a class="btn ghost" href="https://github.com/billeryolo/paygate" target="_blank" rel="noopener">Source</a></div></div>
+</article>
+<article class="proj">
+  <div class="ph"><h3>Pulse</h3><p class="tag">Real-time chat that scales sideways</p>
+  <code class="req"><span class="m">WS</span> /socket.io <span class="ok">200</span></code></div>
+  <div class="pb"><p>Rooms, presence, typing indicators, delivery and read receipts — working across several server instances behind nginx via a Redis Streams adapter, with connection-state recovery so a dropped socket loses nothing. A two-instance integration test runs in CI.</p><p class="stack">TypeScript · Socket.IO · Redis Streams · PostgreSQL · nginx · Zod</p><div class="links"><a class="btn" href="https://pulse-production-ea51.up.railway.app" target="_blank" rel="noopener">Open live</a><a class="btn ghost" href="https://github.com/billeryolo/pulse" target="_blank" rel="noopener">Source</a></div></div>
+</article>
+<article class="proj">
+  <div class="ph"><h3>TaskForge</h3><p class="tag">Background jobs done properly</p>
+  <code class="req"><span class="m">POST</span> /api/v1/reports/sales <span class="ok">200</span></code></div>
+  <div class="pb"><p>PDF reports, bulk email and image compression run as queued jobs that answer 202 with a job id. Exponential-backoff retries, a replayable dead-letter queue, soft and hard time limits, stuck-job recovery and tag-based cache invalidation.</p><p class="stack">Python · FastAPI · Celery · Redis · PostgreSQL · Flower</p><div class="links"><a class="btn" href="https://app-production-b400.up.railway.app/docs" target="_blank" rel="noopener">Open live</a><a class="btn ghost" href="https://github.com/billeryolo/taskforge" target="_blank" rel="noopener">Source</a></div></div>
+</article>
+<article class="proj">
+  <div class="ph"><h3>Shoply</h3><p class="tag">E-commerce API and React storefront</p>
+  <code class="req"><span class="m">GET</span> /docs <span class="ok">200</span></code></div>
+  <div class="pb"><p>Rotating refresh tokens with reuse detection, role-based access, checkout that deducts stock inside a row-locked transaction, Postgres full-text search and integration tests against a real database — deployed as one Vercel project with a serverless FastAPI function.</p><p class="stack">FastAPI · SQLAlchemy 2 · PostgreSQL · React · Vite · Neon</p><div class="links"><a class="btn" href="https://shoply-ivory.vercel.app" target="_blank" rel="noopener">Open live</a><a class="btn ghost" href="https://github.com/billeryolo/shoply" target="_blank" rel="noopener">Source</a></div></div>
+</article>
+<article class="proj">
+  <div class="ph"><h3>Café pre-order</h3><p class="tag">Takeaway pre-orders without installing an app</p>
+  <code class="req"><span class="m">GET</span> / <span class="ok">200</span></code></div>
+  <div class="pb"><p>Guests open a link or a QR code, order and pick up without queuing. Staff get a password-protected admin with a stop-list; the owner gets a dashboard and a one-tap WhatsApp daily report. Built for and pitched to a two-location coffee chain in Astana.</p><p class="stack">Next.js · Prisma · PostgreSQL · Vercel · PWA</p><div class="links"><a class="btn" href="https://coffee-preorder-demo.vercel.app" target="_blank" rel="noopener">Open live</a></div></div>
+</article>
+<article class="proj">
+  <div class="ph"><h3>HobbyHub</h3><p class="tag">Landing page — Zimran Business Cup 2026, top 20</p>
+  <code class="req"><span class="m">GET</span> / <span class="ok">200</span></code></div>
+  <div class="pb"><p>Two-person team. I built the landing page, made the promotional content and calculated ARR for the pitch.</p><p class="stack">Landing · product pitch</p><div class="links"><a class="btn" href="https://hobby-hub-landing.vercel.app" target="_blank" rel="noopener">Open live</a></div></div>
+</article>
+
+<h2>Experience</h2>
+<div class="grid2">
+  <div><h3>Programming tutor · Neiron Academy</h3><p>Jan – Mar 2026, Astana. Five students aged 9–16 plus an adult career-switcher; they shipped a weather site, a personal page and a mini CRM in Python.</p></div>
+  <div><h3>Zimran Business Cup 2026 · Top 20</h3><p>Two-person team: landing page, promotional content and ARR model for HobbyHub.</p></div>
+  <div><h3>Education</h3><p>Nazarbayev University, BSc Computer Science (2025–2029) · Temple University Japan (2024) · Astana IT University (2023–2024)</p></div>
+</div>
+
+<h2>Tools</h2>
+<dl class="skills">
+  <dt>languages</dt><dd>Python, TypeScript, JavaScript, Java, C++, C, SQL</dd>
+  <dt>backend</dt><dd>FastAPI, Node.js (Fastify, Express), Socket.IO, Celery, REST, JWT, Stripe, OpenAI API, Telegram bots</dd>
+  <dt>data &amp; infra</dt><dd>PostgreSQL, Redis, SQLAlchemy, Prisma, Docker Compose, GitHub Actions, Railway, Vercel, Linux</dd>
+  <dt>frontend</dt><dd>React, Next.js, Vite</dd>
+</dl>
+
+<footer>Need a website, a Telegram bot or an ordering system for your business? Write on Telegram or WhatsApp — I reply the same day.</footer>
+</div></body></html>
