@@ -41,19 +41,6 @@ h2{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:500;font-s
 .pb ul{margin:0 0 .7rem;padding-left:1.1rem;max-width:62ch}.pb li{margin:0 0 .45rem}
 .stack{font:.82rem/1.5 "IBM Plex Mono",ui-monospace,monospace;color:var(--muted)}
 .links{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
-.full{grid-column:1/-1}
-.frame{margin:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface);box-shadow:var(--shadow);transition:transform .25s ease,box-shadow .25s ease}
-.frame .bar{display:flex;align-items:center;gap:6px;padding:9px 12px;border-bottom:1px solid var(--line);font:.72rem/1 "IBM Plex Mono",ui-monospace,monospace;color:var(--muted)}
-.frame .bar i{width:9px;height:9px;border-radius:50%;background:var(--line)}
-.frame .bar span{margin-left:8px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.frame img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top}
-a.shot{display:block;text-decoration:none;color:inherit}
-a.shot:hover .frame{transform:translateY(-4px);box-shadow:var(--shadow),0 18px 40px rgba(20,25,26,.12)}
-.phone{border-radius:28px;border:6px solid #14191A;overflow:hidden;box-shadow:var(--shadow);transition:transform .25s ease}
-.phone img{display:block;width:100%;height:auto;aspect-ratio:480/1039;object-fit:cover}
-a.shot:hover .phone{transform:translateY(-4px)}
-.duo{display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:24px;align-items:center}
-.thumb{max-width:520px}
 .sub3{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:500;font-size:1.1rem;margin:40px 0 16px}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
 .card{border:1px solid var(--line);border-radius:12px;padding:18px;background:var(--surface);transition:transform .2s,border-color .2s}
@@ -68,8 +55,8 @@ a.shot:hover .phone{transform:translateY(-4px)}
 footer{margin-top:72px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
 .js .rv{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
 .js .rv.in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}.dot{animation:none}.btn,.frame,.phone,.card{transition:none}a.shot:hover .frame,a.shot:hover .phone,.card:hover,.btn:hover{transform:none}}
-@media (max-width:640px){.intro{grid-template-columns:1fr;gap:18px}.photo{width:108px;height:108px}.proj,.job{grid-template-columns:1fr;gap:12px}.duo{grid-template-columns:1fr}.duo .phone-wrap{max-width:220px;margin:0 auto}.skills{grid-template-columns:1fr}.skills dt{padding-top:.6rem}h2{margin-top:56px}}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}.dot{animation:none}.btn,.card{transition:none}.card:hover,.btn:hover{transform:none}}
+@media (max-width:640px){.intro{grid-template-columns:1fr;gap:18px}.photo{width:108px;height:108px}.proj,.job{grid-template-columns:1fr;gap:12px}.skills{grid-template-columns:1fr}.skills dt{padding-top:.6rem}h2{margin-top:56px}}
 </style></head><body><div class="wrap">
 <div class="top"><div class="lang" role="group" aria-label="Language"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="ru" aria-pressed="false">RU</button><button type="button" data-lang="kk" aria-pressed="false">KZ</button></div></div>
 <section class="intro rv">
@@ -95,10 +82,6 @@ footer{margin-top:72px;padding-top:20px;border-top:1px solid var(--line);color:v
     <li data-i18n="j1_b1">Built a bilingual (RU/KZ) Next.js product site for Aiala Technology's interactive-panel line: a catalog of 7 models with configurations and prices, filtering by screen size, solution pages for schools, businesses and government buyers, and WhatsApp lead capture.</li>
     <li data-i18n="j1_b2">Built a takeaway pre-order web app for the group's café: guest checkout, a password-protected admin with a stop-list, an owner dashboard and a one-tap WhatsApp daily report. Presented it to the owners.</li>
   </ul><p class="stack">Next.js · TypeScript · Prisma · PostgreSQL · Vercel</p><div class="links"><a class="btn ghost" href="https://aiala-web-v2.vercel.app/ru" target="_blank" rel="noopener" data-i18n="btn_aiala">Aiala website</a><a class="btn ghost" href="https://coffee-preorder-demo.vercel.app" target="_blank" rel="noopener" data-i18n="btn_cafe">Café app demo</a></div></div>
-  <div class="full duo">
-    <a class="shot" href="https://aiala-web-v2.vercel.app/ru" target="_blank" rel="noopener"><figure class="frame"><div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>aiala-web-v2.vercel.app/ru</span></div><img src="img/aiala.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Aiala Technology website: interactive panels assembled in Kazakhstan"></figure></a>
-    <div class="phone-wrap"><a class="shot" href="https://coffee-preorder-demo.vercel.app" target="_blank" rel="noopener"><div class="phone"><img src="img/cafe.webp" width="480" height="1039" loading="lazy" decoding="async" alt="Café pre-order app menu on a phone"></div></a></div>
-  </div>
 </article>
 <article class="job rv">
   <div><h3 data-i18n="j2_title">Programming Tutor · Neiron Academy</h3><p class="when" data-i18n="j2_when">Jan – Mar 2026 · Astana</p></div>
@@ -106,8 +89,7 @@ footer{margin-top:72px;padding-top:20px;border-top:1px solid var(--line);color:v
 </article>
 <article class="job rv">
   <div><h3 data-i18n="j3_title">Top-20 Finalist · Zimran Business Cup 2026</h3><p class="when" data-i18n="j3_when">Apr 2026 · two-person team</p></div>
-  <div class="pb"><p data-i18n="j3_p">Built the HobbyHub product landing page, made the promotional content and calculated ARR for the pitch.</p><div class="links"><a class="btn ghost" href="https://hobby-hub-landing.vercel.app" target="_blank" rel="noopener" data-i18n="btn_hobby">HobbyHub landing</a></div>
-  <a class="shot thumb" href="https://hobby-hub-landing.vercel.app" target="_blank" rel="noopener" style="margin-top:18px"><figure class="frame"><div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>hobby-hub-landing.vercel.app</span></div><img src="img/hobbyhub.webp" width="1200" height="750" loading="lazy" decoding="async" alt="HobbyHub landing page"></figure></a></div>
+  <div class="pb"><p data-i18n="j3_p">Built the HobbyHub product landing page, made the promotional content and calculated ARR for the pitch.</p><div class="links"><a class="btn ghost" href="https://hobby-hub-landing.vercel.app" target="_blank" rel="noopener" data-i18n="btn_hobby">HobbyHub landing</a></div></div>
 </article>
 
 <h2 data-i18n="h_proj">Projects</h2>
@@ -119,7 +101,6 @@ footer{margin-top:72px;padding-top:20px;border-top:1px solid var(--line);color:v
     <li data-i18n="sp_b2">Generates practice questions from the student's own pages with page citations; schedules reviews with FSRS spaced repetition.</li>
     <li data-i18n="sp_b3">Forecasts how much of a course will be covered before each exam and rebalances the plan after missed days; syncs deadlines from Moodle via calendar feed; installable PWA with daily reminders.</li>
   </ul><p class="stack">Next.js · TypeScript · Anthropic Claude API · FSRS · PWA</p><div class="links"><a class="btn" href="https://studypath-six.vercel.app/" target="_blank" rel="noopener" data-i18n="btn_live">Open live</a></div></div>
-  <a class="shot full" href="https://studypath-six.vercel.app/" target="_blank" rel="noopener"><figure class="frame"><div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>studypath-six.vercel.app</span></div><img src="img/studypath.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Studypath home page: your syllabus, turned into a daily path"></figure></a>
 </article>
 <article class="proj rv">
   <div class="ph"><h3>Pulse</h3><p class="tag" data-i18n="pu_tag">Real-time chat that scales horizontally</p>
@@ -128,7 +109,6 @@ footer{margin-top:72px;padding-top:20px;border-top:1px solid var(--line);color:v
     <li data-i18n="pu_b1">Rooms, presence, typing, delivery and read receipts across multiple instances behind a load balancer, with connection-state recovery.</li>
     <li data-i18n="pu_b2">JWT auth, keyset pagination, advisory-locked migrations; a two-instance Redis integration test runs in CI.</li>
   </ul><p class="stack">TypeScript · Socket.IO · Redis Streams · PostgreSQL · nginx</p><div class="links"><a class="btn" href="https://pulse-production-ea51.up.railway.app" target="_blank" rel="noopener" data-i18n="btn_live">Open live</a><a class="btn ghost" href="https://github.com/billeryolo/pulse" target="_blank" rel="noopener" data-i18n="btn_src">Source</a></div></div>
-  <a class="shot full" href="https://pulse-production-ea51.up.railway.app" target="_blank" rel="noopener"><figure class="frame"><div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>pulse-production-ea51.up.railway.app</span></div><img src="img/pulse.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Pulse chat room with members list and server instance id"></figure></a>
 </article>
 <h3 class="sub3" data-i18n="h_also">Also built</h3>
 <div class="cards rv">
